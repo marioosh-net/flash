@@ -4,6 +4,8 @@ import cw1.Cwiczenie1;
 
 import cw2.Cwiczenie2;
 
+import cw3.Cwiczenie3;
+
 import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.text.TextField;
@@ -31,7 +33,7 @@ public class As1_module1 extends Sprite {
          */
         new Cwiczenie1();
         new Cwiczenie2();
-
+        new Cwiczenie3();
 
     }
 }
