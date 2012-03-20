@@ -1,9 +1,5 @@
 /**
- * Created by IntelliJ IDEA.
- * User: Administrator
- * Date: 20.03.12
- * Time: 11:24
- * To change this template use File | Settings | File Templates.
+ * Cwiczenie 1
  */
 package {
 public class Cwiczenie1 extends Base {

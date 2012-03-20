@@ -1,14 +1,17 @@
 /**
- * Created by IntelliJ IDEA.
- * User: Administrator
- * Date: 20.03.12
- * Time: 11:25
- * To change this template use File | Settings | File Templates.
+ * Klasa bazowa
  */
 package {
+import flash.utils.*;
+
 public class Base {
     public function Base() {
-        trace(this);
+        var name:String = "* " + getQualifiedClassName(this) + "                                                    *";
+        var belka = '************************************************************************************************************************************'
+                .substr(0,name.length);
+        trace(belka);
+        trace(name);
+        trace(belka);
     }
 }
 }
