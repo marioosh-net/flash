@@ -7,7 +7,9 @@ import flash.system.System;
 import flash.text.TextField;
 
 public class As1_module1 extends Sprite {
+
     private var textField:TextField = null;
+
     public function As1_module1() {
         textField = new TextField();
         textField.width = 200;
@@ -15,20 +17,27 @@ public class As1_module1 extends Sprite {
         textField.background = true;
         textField.text = "hello, world łóżźćąę "+Math.random();
         addChild(textField);
+        mouseActions(textField);
+
+        /**
+         * trace <=> System.out.print
+         */
         trace(textField);
 
         /**
          * anonymous function
          */
-        var f = function():void {
+        var echo = function(text:String):void {
+            trace(text);
         }
+        echo('ala ma kota');
+
+        /**
+         * arrays
+         */
         arrays();
-
-        var a = [];
-        a[0] = 111;
-        mouseActions(textField);
-
     }
+
 
     /**
      * arrays
@@ -45,7 +54,11 @@ public class As1_module1 extends Sprite {
     }
 
 
-    function mouseActions(o):void {
+    /**
+     * events
+     * @param o
+     */
+    function mouseActions(o:TextField):void {
 
         o.addEventListener(MouseEvent.MOUSE_OVER, function(){
             textField.text = "Mouse Over";
