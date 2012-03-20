@@ -10,7 +10,8 @@ public class Cwiczenie1 extends Base {
     public function Cwiczenie1() {
         var a:Array = [];
         iter(a);
-        var v:Vector = new Vector.<int>();
+        var v:Vector.<int> = new Vector.<int>();
+        // v.length = 60;
         iter(v);
     }
     
@@ -26,7 +27,12 @@ public class Cwiczenie1 extends Base {
         }
         trace(suma1);
 
-        a[suma1] = suma1;
+        try {
+            a[suma1] = suma1; // wektor nie ma "dziur"
+        }    catch (e:Error) {
+            trace(e);
+        }
+
         trace(a);
         for each (var elem:int in a) {
             trace(elem);
