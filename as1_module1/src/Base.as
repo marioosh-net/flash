@@ -13,5 +13,9 @@ public class Base {
         trace(name);
         trace(belka);
     }
+
+    protected function echo(text:Object) {
+        trace(text);
+    }
 }
 }

@@ -1,7 +1,7 @@
 /**
  * Cwiczenie 1
  */
-package {
+package cw1 {
 public class Cwiczenie1 extends Base {
     public function Cwiczenie1() {
         var a:Array = [];

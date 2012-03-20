@@ -1,5 +1,9 @@
 package {
 
+import cw1.Cwiczenie1;
+
+import cw2.Cwiczenie2;
+
 import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.text.TextField;
@@ -26,6 +30,7 @@ public class As1_module1 extends Sprite {
          * cwiczenia
          */
         new Cwiczenie1();
+        new Cwiczenie2();
 
 
     }

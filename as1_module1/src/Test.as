@@ -66,6 +66,5 @@ public class Test extends Base {
             trace(elem);
         }
     }
-
 }
 }
