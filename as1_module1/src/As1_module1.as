@@ -36,21 +36,38 @@ public class As1_module1 extends Sprite {
          * arrays
          */
         arrays();
+
+        new Cwiczenie1();
     }
 
 
     /**
      * arrays
      */
-    function arrays() {
+    private function arrays() {
         var a:Array = [];
-        a[0] = 2;
-        a[22] = 12;
+        a[0] = 121;
+        a[22] = 666;
         trace(a.length);
         trace(a);
         delete a[0];
         trace(a.length);
         trace(a);
+
+        trace('-------------- petla 0 -------------------');
+        for(var i=0; i< 4; i++) {
+            trace(i);
+        }
+
+        trace('-------------- petla 1 -------------------');
+        for(var i in a) {
+            trace('a['+i+']='+a[i]);
+        }
+
+        trace('-------------- petla 2 -------------------');
+        for each (var elem:Object in a) {
+            trace(elem);
+        }
     }
 
 
@@ -58,7 +75,7 @@ public class As1_module1 extends Sprite {
      * events
      * @param o
      */
-    function mouseActions(o:TextField):void {
+    private function mouseActions(o:TextField):void {
 
         o.addEventListener(MouseEvent.MOUSE_OVER, function(){
             textField.text = "Mouse Over";
