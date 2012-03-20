@@ -27,6 +27,7 @@ public class As1_module1 extends Sprite {
         var a = [];
         a[0] = 111;
         mouseActions(textField);
+
     }
 
     /**
