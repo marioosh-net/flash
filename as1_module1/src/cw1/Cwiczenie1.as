@@ -27,6 +27,8 @@ public class Cwiczenie1 extends Base {
             a[suma1] = suma1; // wektor nie ma "dziur"
         }    catch (e:Error) {
             trace(e);
+        } finally {
+            trace("finally");
         }
 
         trace(a);
