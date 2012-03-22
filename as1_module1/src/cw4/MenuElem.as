@@ -64,6 +64,19 @@ public class MenuElem extends Sprite {
             var target:MenuElem = (MenuElem)(e.currentTarget);
             trace("target: " + e.target);
             trace("currentTarget: " + e.currentTarget);
+
+            if(target._name == "Góra") {
+                DrawMenu.rect.y = DrawMenu.rect.y - 10;
+            }
+            if(target._name == "Dół") {
+                DrawMenu.rect.y = DrawMenu.rect.y + 10;
+            }
+            if(target._name == "Prawo") {
+                DrawMenu.rect.rotationZ = DrawMenu.rect.rotationZ + 10;
+            }
+            if(target._name == "Lewo") {
+                DrawMenu.rect.rotationZ = DrawMenu.rect.rotationZ -10;
+            }
         });
     }
 }

@@ -15,8 +15,8 @@ public class DrawMenu extends Sprite {
 
     private function doDrawMenu():void {
 
-        addChild(new MenuElem("W prawo", 140, 10));
-        addChild(new MenuElem("W lewo", 10, 10));
+        addChild(new MenuElem("Prawo", 140, 10));
+        addChild(new MenuElem("Lewo", 10, 10));
         addChild(new MenuElem("Góra", 10, 60));
         addChild(new MenuElem("Dół", 10, 110));
         // addChild(new MenuElem("Bardzo bardzo długo opis przycisku", 40, 150));
