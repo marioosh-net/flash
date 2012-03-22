@@ -7,6 +7,7 @@
  */
 package cw5 {
 import flash.display.Sprite;
+import flash.events.MouseEvent;
 
 public class FlashTest extends Sprite {
     public function FlashTest() {
