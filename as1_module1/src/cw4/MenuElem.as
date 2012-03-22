@@ -71,13 +71,26 @@ public class MenuElem extends Sprite {
             if(target._name == "Dół") {
                 DrawMenu.rect.y = DrawMenu.rect.y + 10;
             }
-            if(target._name == "Prawo") {
+            if(target._name == "Obróć Prawo") {
                 DrawMenu.rect.rotationZ = DrawMenu.rect.rotationZ + 10;
+                // DrawMenu.rect.rotation = DrawMenu.rect.rotation - 20;
             }
-            if(target._name == "Lewo") {
+            if(target._name == "Obróć Lewo") {
                 DrawMenu.rect.rotationZ = DrawMenu.rect.rotationZ -10;
             }
+            if(target._name == "Prawo") {
+                DrawMenu.rect.x = DrawMenu.rect.x + 10;
+            }
+            if(target._name == "Lewo") {
+                DrawMenu.rect.x = DrawMenu.rect.x - 10;
+            }
+            if(target._name == "Anim") {
+                anim();
+            }
         });
+    }
+    private function anim():void {
+        //DrawMenu.rect.rotationZ = DrawMenu.rect.rotationZ -10;
     }
 }
 }

@@ -12,10 +12,12 @@ import flash.utils.getAliasName;
 
 public class Rect extends Sprite {
     public function Rect() {
+        x = 250;
+        y = 250;
         var g:Graphics = this.graphics;
         g.beginFill(0xaacccc);
         g.lineStyle(1, 0x000000);
-        g.drawRect(250,250,100,100);
+        g.drawRect(-50,-50,100,100);
     }
 }
 }
