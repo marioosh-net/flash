@@ -9,12 +9,17 @@ package cw4 {
 import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.events.MouseEvent;
+import flash.events.TimerEvent;
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
 import flash.text.TextFormat;
+import flash.utils.Timer;
 
 public class MenuElem extends Sprite {
 
+    var t:Timer;
+    var tt:int = 70;
+    
     static var w:int = 100;
     static var h:int = 40;
     
@@ -88,9 +93,26 @@ public class MenuElem extends Sprite {
                 anim();
             }
         });
+
+        DrawMenu.rect.addEventListener(MouseEvent.CLICK, function(){
+            if(t != null) {
+                t.stop();
+                t = null;
+            }
+        });
     }
     private function anim():void {
-        //DrawMenu.rect.rotationZ = DrawMenu.rect.rotationZ -10;
+        if(t != null) {
+            if(t.delay > 10) {
+                t.delay -= 10;
+            }
+        } else {
+            t = new Timer(tt, 0);
+            t.addEventListener(TimerEvent.TIMER, function(){
+                DrawMenu.rect.rotationZ -=10;
+            })
+            t.start();
+        }
     }
 }
 }
